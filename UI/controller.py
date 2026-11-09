@@ -35,6 +35,7 @@ class Controller:
         else:
             # Non è stato possibile connettersi al db per caricare le biblioteche e/o i generi
             self._view.show_alert(f"❌ Errore nel caricamento delle biblioteche e/o dei generi dal db")
+
         self._view.update()
 
     # CALLBACKS DROPDOWN

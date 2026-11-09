@@ -61,7 +61,6 @@ class View:
             ft.Row(controls=[btn_libri], alignment = ft.MainAxisAlignment.CENTER),
             self._list_view
 
-
         )
 
         self.page.scroll = "adaptive"
