@@ -37,9 +37,8 @@ class View:
 
         # --- Sezione 2: Filtraggio ---
         self._ddB = ft.Dropdown(label="Biblioteca", width=500, on_select=self.controller.handler_aggiorna_biblioteca)
-        self.controller.popola_ddB()
         self._ddG = ft.Dropdown(label="Genere", width=300, on_select=self.controller.handler_aggiorna_genere)
-        self.controller.popola_ddG()
+        self.controller.popola_ddB_e_ddG()
         # Sezione 3: Libri
         btn_libri = ft.Button(content = "Mostra libri", on_click=self.controller.handler_mostra_libri)
         self._list_view = ft.ListView(expand = True, spacing=10)
